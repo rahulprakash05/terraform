@@ -1,0 +1,13 @@
+provider "aws" {
+  region = "us-east-1"  # Specify the AWS region of your choice
+}
+
+resource "aws_instance" "example_instance" {
+  ami           = "ami-0a3c3a20c09d6f377"  # Amazon Linux 2 AMI ID (change as needed)
+  instance_type = "t2.micro"                # Instance type (change as needed)
+
+  tags = {
+    Name = "example-instance"
+  }
+}
+

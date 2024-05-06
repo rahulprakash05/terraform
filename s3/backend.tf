@@ -1,7 +1,7 @@
-terraform {
+/*terraform {
   backend "s3" {
     bucket = "rahul-bucket"
-    key    = "rahul-bucket/terraform.tfstate"
+    key    = "rahul/terraform.tfstate"
     region = "us-east-1"
   }
-}
+}*/
